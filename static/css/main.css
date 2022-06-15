@@ -1,6 +1,12 @@
 body {
     margin: 50px;
     font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.body-cont {
+    width: 800px;
 }
 
 .heading-container {
