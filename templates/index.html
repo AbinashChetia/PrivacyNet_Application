@@ -5,6 +5,40 @@
 {% endblock %}
 
 {% block body %}
+<div class="heading-container">
     <h1>PrivacyNet Application</h1>
     <p>Semi-Adversial Networks for Multi-attribute Face Privacy</p>
+</div><br>
+<form class="form-inline" action="{{ url_for('index') }}" method="post">
+    <div class="form-group">
+        <label for="inputImage">Enter an Image:</label>
+        <input type="file"  class="form-control" id="inputImage"><br><br>
+        <input type="button" class="btn btn-upload" value="Upload and Process" onclick="">
+        <input type="reset" class="btn btn-upload" value="Reset">
+    </div>
+</form>
+<div class="output-container">
+    <h2>Output</h2><br>
+    <div class="output-grid">
+        <div class="img-grid">
+            <img src="" alt="Original Image">
+            <div class="img-attr">
+                <div class="attr">
+                    {<br> &emsp; Original Image Attributes<br>}
+                </div>
+            </div>
+        </div>
+        <div class="img-grid">
+            <img src="" alt="Processed Image">
+            <div class="img-attr">
+                <div class="attr">
+                    {<br> &emsp; Processed Image Attributes<br>}
+                </div>
+            </div>
+        </div>
+        <div class="download-btn-grid">
+            <input type="button" class="btn btn-down" value="Download Processed Image" onclick="">
+        </div>
+    </div>
+</div>
 {% endblock %}
