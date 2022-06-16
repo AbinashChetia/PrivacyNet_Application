@@ -1,49 +1,55 @@
 body {
-    margin: 50px;
-    font-family: "Poppins", sans-serif;
+  margin: 50px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.body-container {
+  width: 800px;
 }
 
 .heading-container {
-    text-align: center;
+  text-align: center;
 }
 
 .form-inline {
-    font-size: large;
+  font-size: large;
 }
 
 .output-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .img-grid {
-    border-radius: 5px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .img-attr {
-    border-block: 1px solid black;
-    background-color: #282828;
-    border-radius: 5px;
-    color: aliceblue;
+  border-block: 1px solid black;
+  background-color: #282828;
+  border-radius: 5px;
+  color: aliceblue;
 }
 
 .attr {
-    padding: 10px;
+  padding: 10px;
 }
 
 .download-btn-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-start: 1;
-    grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .btn-down {
-    font-size: 1.1em;
-    padding: 5px;
-    grid-column-start: 2;
-    grid-column-end: 2;
+  font-size: 1.1em;
+  padding: 5px;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
